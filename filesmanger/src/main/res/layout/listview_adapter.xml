@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bmp"/>
+    <TextView
+        android:layout_marginRight="55dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/iv_icon"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_icon"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:text="name"/>
+    <TextView
+        android:layout_marginRight="55dp"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="6dp"
+        android:id="@+id/tv_content"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"/>
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>

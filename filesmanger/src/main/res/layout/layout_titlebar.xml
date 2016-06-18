@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="56dp">
+    <TextView
+        android:id="@+id/tv_appname"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="12dp"
+        android:textSize="20dp"
+        android:text="文件管理"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_below="@id/tv_appname"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="12dp"
+        android:text="文件与文件夹"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp" />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_edit"
+        android:layout_width="52dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="42dp"
+        android:src="@mipmap/edit"
+      />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_edit"
+        android:id="@+id/iv_search"
+        android:layout_width="52dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="42dp"
+        android:src="@mipmap/search"/>
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_search"
+        android:id="@+id/iv_collect"
+        android:layout_width="52dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="42dp"
+        android:src="@mipmap/store"/>
+</RelativeLayout>
